@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #ffc;
+}
+header {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  color: #ffc;
+}
+.banner {
+  background: url(images/banner.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0px -140px;
+}
+header h1,
+#our-menu h2,
+#about-us h2,
+#contact-us h2 {
+  text-transform: uppercase;
+  font-family: "Playfair Display SC", serif;
+  color: #49281a;
+  padding: 20px;
+}
+header p {
+  font-family: lato;
+  padding: 10px 0;
+}
+.btn {
+  width: 130px;
+  height: 40px;
+  background-color: #49281a;
+  display: block;
+  text-decoration: none;
+  line-height: 40px;
+  color: white;
+  border-radius: 5px;
+  font-family: lato;
+  margin: 10px auto;
+  cursor: pointer;
+}
+nav {
+  padding: 20px;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  padding: 0px 20px;
+  color: #ffc;
+  font-family: lato;
+}
+nav a:hover{
+    scale: 1.6;
+    transition: 0.6s;
+    text-decoration: underline;
+}
+.coffee-container,
+.snack-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 20px;
+}
+#our-menu {
+  background-color: bisque;
+}
+#our-menu .menu {
+  padding: 10px;
+  font-family: lato;
+}
+.card {
+  margin: 20px 30px;
+  width: 300px;
+  height: 450px;
+  text-align: center;
+  border: 1px solid #49281a;
+  border-radius: 5px;
+  background-color: white;
+}
+.card img {
+  padding: 10px;
+  height: 220px;
+}
+.card p {
+  padding: 10px;
+  font-family: lato;
+}
+.card button {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #49281a;
+  color: white;
+  border-radius: 5px;
+  font-family: lato;
+  cursor: pointer;
+}
+#about-us p,
+#contact-us p {
+  padding: 10px;
+  line-height: 1.5;
+  font-family: lato;
+  text-align: justify;
+  text-indent: 5%;
+}
+#contact-us {
+  font-family: lato;
+}
+form {
+  width: 400px;
+  /* border: 1px solid red; */
+  padding: 10px;
+}
+form label {
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+}
+#contact-us div {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+/* #contact-us button{
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #49281a;
+  color: white;
+} */
+input[type="text"],
+input[type="email"] {
+  width: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.comment {
+  display: flex;
+  align-items: top;
+}
+.comment textarea {
+  width: 200px;
+  resize: none;
+  border: none;
+  outline: none;
+}
+footer {
+  padding: 30px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: lato;
+  border-top: 1px solid #49281a;
+  position: relative;
+}
+footer a{
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    margin: 0px 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    color: #49281a;
+}
