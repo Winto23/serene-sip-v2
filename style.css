@@ -55,10 +55,10 @@ nav a {
   color: #ffc;
   font-family: lato;
 }
-nav a:hover{
-    scale: 1.6;
-    transition: 0.6s;
-    text-decoration: underline;
+nav a:hover {
+  scale: 1.6;
+  transition: 0.6s;
+  text-decoration: underline;
 }
 .coffee-container,
 .snack-container {
@@ -77,15 +77,15 @@ nav a:hover{
 .card {
   margin: 20px 30px;
   width: 300px;
-  height: 450px;
   text-align: center;
   border: 1px solid #49281a;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: white;
 }
 .card img {
-  padding: 10px;
-  height: 220px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .card p {
   padding: 10px;
@@ -93,20 +93,22 @@ nav a:hover{
 }
 .card button {
   padding: 10px;
-  margin-bottom: 10px;
   background-color: #49281a;
   color: white;
   border-radius: 5px;
   font-family: lato;
   cursor: pointer;
+  width: 80%;
+  margin-bottom: 20px;
 }
 #about-us p,
 #contact-us p {
-  padding: 10px;
+  padding: 15px;
   line-height: 1.5;
   font-family: lato;
   text-align: justify;
-  text-indent: 5%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #contact-us {
   font-family: lato;
@@ -151,22 +153,46 @@ input[type="email"] {
   border: none;
   outline: none;
 }
+/* footer section  */
+
 footer {
-  padding: 30px;
-  margin-top: 20px;
-  text-align: center;
-  font-family: lato;
-  border-top: 1px solid #49281a;
-  position: relative;
+  display: flex;
+  padding: 30px 20px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
 }
-footer a{
-    text-decoration: none;
-    position: absolute;
-    right: 10px;
-    top: 20px;
-    margin: 0px 10px;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 50%;
-    color: #49281a;
+.fa-facebook,
+.fa-linkedin {
+  color: blue;
+}
+.fa-youtube {
+  color: red;
+}
+.fa-x-twitter {
+  color: rgb(68, 176, 219);
+}
+.right i {
+  padding: 0px 10px;
+  cursor: pointer;
+}
+/* footer a {
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  margin: 0px 10px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50%;
+  color: #49281a;
+} */
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .right {
+    padding-top: 20px;
+  }
 }
